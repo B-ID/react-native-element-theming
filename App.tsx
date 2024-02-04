@@ -1,5 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import Navigation from "@navigation/index";
+
+
+
 // import * as SplashScreen from "expo-splash-screen";
 // import { enableFreeze, enableScreens } from "react-native-screens";
 
@@ -16,21 +20,23 @@ import { StyleSheet, Text, View } from 'react-native';
 //   enableInExpoDevelopment: false,
 // });
 
-
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <View style={styles.container}>
+    //   <Text>Open up App.tsx to start working on your app!</Text>
+    //   <StatusBar style="auto" />
+    // </View>
+    <>
+      <Navigation />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

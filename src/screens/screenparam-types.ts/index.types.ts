@@ -1,8 +1,6 @@
 export type RootStackParamList = {
-  onboarding: undefined;
-  logout: undefined;
-  home: undefined;
-  settings: undefined;
-  verifyOTP: undefined;
+  Onboarding: undefined;
+  Logout: undefined;
+  Home: undefined;
+  Settings: undefined;
 };
-

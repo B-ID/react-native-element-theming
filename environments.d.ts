@@ -3,17 +3,11 @@ export {};
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      NEXT_PUBLIC_STAGE: "development" | "staging" | "production";
-      NEXT_PUBLIC_MAGIC_PUB_KEY: string;
-      NEXT_PUBLIC_WEBSITE_DOMAIN: string;
-      NEXT_PUBLIC_STRIPE_KEY: string;
-      NEXT_PUBLIC_AMPLITUDE_API_KEY: string;
-      GROWTHBOOK_FEATURES_ENDPOINT: string;
-      NEXT_PUBLIC_ALCHEMY_API_KEY: string;
-      E2E: string;
-      NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID: string;
-      NEXT_PUBLIC_CROSSMINT_PROJECT_ID: string;
-      NEXT_PUBLIC_PRIVY_APP_ID: string;
+      ENCRYPTION_KEY: string;
+      MERCHANT_SECRET_KEY: string;
+      MOBILE_DEVELOPMENT_URL: string;
+      MOBILE_STAGING_URL: string;
+      MOBILE_PRODUCTION_URL: string;
     }
   }
   interface Window {
