@@ -6,8 +6,3 @@ export type RootStackParamList = {
   verifyOTP: undefined;
 };
 
-const evenNumber = (value: number) => {
-  // check if number is even
-  if (value % 2 === 0) return "even";
-  return "odd";
-};
